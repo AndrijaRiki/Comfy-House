@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComfyHouse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="JS/page-functions.js" defer></script>
+    <script src="JS/Session.js" defer></script>
+    <script src="JS/User.js" defer></script>
+    <script src="JS/Order.js" defer></script>
+    <script src="JS/app.js" defer></script>
+</head>
+<body>
+    <header id="navbar">
+        <i class="fas fa-bars"></i>
+        <div id="logo"><span>Comfy</span> <span>House</span></div>
+        <i class="fas fa-shopping-cart" id="cart"><div id="number-of-items">0</div></i>
+        <div id="popup-cart">
+            <i class="fas fa-window-close"></i>
+            <h2>Your Cart</h2>
+            <section id="items">
+                <div id="items-wrapper">
+
+                </div>
+                <div id="popup-footer">
+                    <p>Your Total: $<span id="total">0</span></p>
+                    <button id="clear-cart">Clear Cart</button><br>
+                    <button id="buy">buy</button>
+                </div>
+            </section>
+            <div class="footer">
+                Brought to you by <span>Comfy</span><span>House</span>
+            </div>
+        </div>
+    </header>
+    <!-- Menu -->
+    <section id="menu">
+        <i class="fas fa-window-close"></i>
+        <div id="profile">
+            <i class="fas fa-user"></i>
+            <span id="name"></span>
+        </div>
+        <div id="buttons">
+            <button id="login-btn">LOGIN</button>
+            <button id="logout">LOGOUT</button>
+            <button id="sign-in-btn">SIGN IN</button>
+            <button id="delete-account">DELETE ACCOUNT</button>
+        </div>
+        <div class="footer">
+            Brought to you by <span>Comfy</span><span>House</span>
+        </div>
+    </section>
+    <!-- Home Page -->
+    <section id="home">
+        <div id="banner">
+            <h1 id="title">furniture collection</h1>
+            <a href="#products" id="banner-btn">SHOP NOW</a>
+        </div>
+    </section>
+    <!-- Our Products -->
+    <section id="products">
+        <h1>our products</h1>
+        <div class="products-center">
+            <div class="single-product">
+                <img src="images/product-1.jpeg" alt="">
+                <span class="product-name">Queen Panel Bed</span>
+                <span class="price">$10.99</span>
+                <button class="product-popup">add to cart</button>
+            </div>
+            <div class="single-product">
+                <img src="images/product-2.jpeg" alt="">
+                <span class="product-name">King Panel Bed</span>
+                <span class="price">$12.99</span>
+                <button class="product-popup">add to cart</button>
+            </div>
+            <div class="single-product">
+                <img src="images/product-3.jpeg" alt="">
+                <span class="product-name">Twin Panel Bed</span>
+                <span class="price">$17.99</span>
+                <button class="product-popup">add to cart</button>
+            </div>
+            <div class="single-product">
+                <img src="images/product-4.jpeg" alt="">
+                <span class="product-name">Single Panel Bed</span>
+                <span class="price">$23.99</span>
+                <button class="product-popup">add to cart</button>
+            </div>
+            <div class="single-product">
+                <img src="images/product-5.jpeg" alt="">
+                <span class="product-name">Fridge</span>
+                <span class="price">$34.99</span>
+                <button class="product-popup">add to cart</button>
+            </div>
+            <div class="single-product">
+                <img src="images/product-6.jpeg" alt="">
+                <span class="product-name">Dresser</span>
+                <span class="price">$22.99</span>
+                <button class="product-popup">add to cart</button>
+            </div>
+            <div class="single-product">
+                <img src="images/product-7.jpeg" alt="">
+                <span class="product-name">Couch</span>
+                <span class="price">$42.99</span>
+                <button class="product-popup">add to cart</button>
+            </div>
+            <div class="single-product">
+                <img src="images/product-8.jpeg" alt="">
+                <span class="product-name">Table</span>
+                <span class="price">$11.99</span>
+                <button class="product-popup">add to cart</button>
+            </div>
+        </div>
+    </section>
+    <div id="sign-in">
+        <form id="sign-in-form">
+            <i class="fas fa-window-close"></i>
+            <div>
+                <label for="fname">First Name</label>
+                <input required type="text" name="fname" id="fname">
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input required type="text" name="lname" id="lname">
+            </div>
+            <div>
+                <label for="signin-email">E-mail</label>
+                <input required type="email" name="email" id="signin-email">
+            </div>
+            <div>
+                <label for="signin-password">Password</label>
+                <input required type="password" name="password" id="signin-password">
+            </div>
+            <div>
+                <input type="submit" id="create-acc-submit" value="Create account">
+            </div>
+        </form>
+    </div>
+    <div id="login">
+        <form id="login-form">
+            <i class="fas fa-window-close"></i>
+            <div>
+                <label for="login-email">E-mail</label>
+                <input required type="email" name="email" id="login-email">
+            </div>
+            <div>
+                <label for="login-password">Password</label>
+                <input required type="password" name="password" id="login-password">
+            </div>
+            <div>
+                <input type="submit" value="Login" id="login-form-submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
